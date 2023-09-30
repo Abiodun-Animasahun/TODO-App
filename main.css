@@ -1,0 +1,110 @@
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(276, 70%, 14%);
+  --clr-primary-2: hsl(276, 74%, 25%);
+  --clr-primary-3: hsl(279, 72%, 37%);
+  --clr-primary-4: hsl(269, 63%, 48%);
+  /* primary/main color */
+  --clr-primary-5: #74419a;
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(282, 23%, 50%);
+  --clr-primary-7: hsl(286, 31%, 65%);
+  --clr-primary-8: hsl(293, 69%, 82%);
+  --clr-primary-9: hsl(205, 90%, 88%);
+  --clr-primary-10: hsl(205, 100%, 96%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 69%, 16%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 1%, 64%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(216, 13%, 92%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(200, 3%, 20%);
+  --clr-white: #fff;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(0, 63%, 22%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-black: #222;
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.14rem;
+  --radius: 0.5rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0 50px;
+  background-color: #e5e5e5;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.App {
+  background-color: var(--clr-white);
+  width: 300px;
+  height: fit-content;
+  border: 2px solid var(--clr-primary-3);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+#addNew {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--clr-primary-8);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.fa-plus {
+  background-color: var(--clr-primary-6);
+  padding: 3px;
+  border-radius: 3px;
+}
+.fa-plus:hover {
+  background-color: var(--clr-primary-7);
+  padding: 5px;
+}
+#msg {
+  color: #ff0000;
+}
+
+#tasks {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+#tasks div {
+  border: 3px solid var(--clr-primary-5);
+  background-color: var(--clr-primary-8);
+  border-radius: 6px;
+  padding: 5px;
+  display: grid;
+  gap: 4px;
+}
+#tasks div .options {
+  justify-self: center;
+  display: flex;
+  gap: 20px;
+}
+
+#tasks div .options i {
+  cursor: pointer;
+}
+.small text-secondary {
+  color: #000000;
+}
